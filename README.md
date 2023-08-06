@@ -11,11 +11,11 @@ Some differences:
 
 ## Usage
 
-`
+```
 source setenv.sh
 sh build.sh
 ./simulator
-`
+```
 
 ![example](https://github.com/rzavalet/DiseaseSimulator/blob/main/simulation.gif)
 
