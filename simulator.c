@@ -17,7 +17,7 @@
 
 /* Disease dynamics */
 #define POPULATION_SIZE         (1000)
-#define DAY_LENGTH              (24)
+#define DAY_LENGTH              (10)
 #define INFECTION_DURATION      (15 * DAY_LENGTH)
 #define INFECTION_PROBABILITY   (1)
 #define NORMAL_FATALITY_RATE    (10)
@@ -103,7 +103,7 @@ person_t  people[POPULATION_SIZE];
 disease_history_t history = {0};
 bool paused = false;
 bool system_saturated = false;
-unsigned int health_system_policy = 0;
+unsigned int health_system_policy = ISOLATION;
 
 
 
@@ -277,7 +277,7 @@ int main(void)
   init_people();
   history_append(0, &history);
 
-  InitWindow(WIDTH, HEIGHT, "Covid simulation");
+  InitWindow(WIDTH, HEIGHT, "Disease simulation");
   SetTargetFPS(60);
 
   while (!WindowShouldClose()) {

@@ -7,5 +7,6 @@
 #
 
 
-export LD_LIBRARY_PATH=/home/rzavalet/opt/raylib/lib
-export PKG_CONFIG_PATH=/home/rzavalet/Coding/C/raylib/build/raylib
+# Assumes specific locations for the raylib installation
+export LD_LIBRARY_PATH=${HOME}/opt/raylib/lib
+export PKG_CONFIG_PATH=${HOME}/Coding/C/raylib/build/raylib
